@@ -1,0 +1,20 @@
+<ActorFrame><children>
+	<Layer File="../ScreenGameplay Overlay/Frame.png" OnCommand="x,SCREEN_LEFT+110;y,SCREEN_CENTER_Y+(442-240)" />
+	<Layer File="../ScreenGameplay Overlay/Frame.png" OnCommand="zoomx,-1;x,SCREEN_RIGHT-110;y,SCREEN_CENTER_Y+(442-240)" />
+
+	<Layer Type="Quad" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+100;zoomto,SCREEN_WIDTH*2,50;diffuse,0,0,0,0.5" />
+	<Layer Font="_shared2" Text="Press &START; to play!" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+100;zoom,1.0005;diffuse,1,0,0,1" />
+	<Layer Font="_shared2" Text="Press &START; to play!" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+100;diffuseblink" />
+</children></ActorFrame>
+[BGAnimation]
+LengthSeconds=8
+
+[Layer1]
+File=../_black.png
+Type=0		// 0=sprite, 1=stretch, 2=particles, 3=tiles
+Command=x,320;y,240;zoomtowidth,640;zoomtoheight,120;diffusealpha,0.7
+
+[Layer2]
+File=demonstration.png
+Type=0		// 0=sprite, 1=stretch, 2=particles, 3=tiles
+Command=x,320;y,240;diffuseblink;effectperiod,1

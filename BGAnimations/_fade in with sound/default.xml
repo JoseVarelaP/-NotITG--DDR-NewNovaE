@@ -1,0 +1,6 @@
+<ActorFrame><children>
+	<!-- This will act as the BGAnimation LengthSeconds command. -->
+	<Layer Type="Quad" OnCommand="%function(self) self:zoom(0) AudioPlay('_swoosh.ogg') self:sleep(0.3) end" />
+
+	<Layer File="../_fade in" />
+</children></ActorFrame>

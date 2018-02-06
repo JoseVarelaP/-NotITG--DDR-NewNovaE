@@ -1,0 +1,10 @@
+<ActorFrame><children>
+	<Layer File="../_bg.png" OnCommand="zoomtowidth,SCREEN_WIDTH+5;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y" />
+
+	<Layer Type="ActorFrame" OnCommand="fov,170"><children>
+		<Layer File="../sphere_back.txt" OnCommand="x,SCREEN_CENTER_X+(300-320);y,SCREEN_CENTER_Y+(540-240);rotationx,-20;rotationz,90;zoom,12;spin;effectmagnitude,3,2,0" />
+		<Layer File="../ring1_back.txt" OnCommand="x,SCREEN_CENTER_X+(300-320);y,SCREEN_CENTER_Y+(540-240);rotationx,-20;rotationz,90;zoom,12;spin;effectmagnitude,30,22,45" />
+		<Layer File="../ring1_back.txt" OnCommand="x,SCREEN_CENTER_X+(300-320);y,SCREEN_CENTER_Y+(540-240);rotationx,-20;zoom,12;spin;effectmagnitude,-30,22,-45" />
+	</children></Layer>
+
+</children></ActorFrame>

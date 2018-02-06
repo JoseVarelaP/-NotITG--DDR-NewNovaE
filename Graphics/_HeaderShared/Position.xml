@@ -1,0 +1,6 @@
+<ActorFrame><children>
+	<Layer File="body.png" OnCommand="zoomtowidth,SCREEN_WIDTH+5;x,SCREEN_CENTER_X;y,-5.5" />
+	<Layer File="left.png" OnCommand="horizalign,left;x,SCREEN_LEFT" />
+	<Layer File="Timer.png" OnCommand="horizalign,right;x,SCREEN_RIGHT;y,5" />
+
+</children></ActorFrame>

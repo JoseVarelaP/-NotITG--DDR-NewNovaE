@@ -1,0 +1,5 @@
+<ActorFrame><children>
+	<Layer File="_HeaderShared/Position.xml" />
+	<Layer Font="DifficultyList" Text="Options Menu" OnCommand="x,SCREEN_LEFT+5" />
+
+</children></ActorFrame>

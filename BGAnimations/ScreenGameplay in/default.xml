@@ -1,0 +1,27 @@
+<ActorFrame><children>
+	<!-- This will act as the BGAnimation LengthSeconds command. -->
+	<Layer Type="Quad" OnCommand="%function(self) self:zoom(0) self:sleep(2) end" />
+
+	<Layer File="../_black.png" OnCommand="zoomto,SCREEN_WIDTH*2,SCREEN_HEIGHT*2;diffusealpha,1;sleep,0.1;linear,0.5;diffusealpha,0" />
+
+	<Layer File="../_doorright.png" OnCommand="faderight,0.1;horizalign,left;y,SCREEN_CENTER_Y;x,SCREEN_CENTER_X-35;linear,0.3;x,1004" />
+	<Layer File="../_doorleft.png" OnCommand="fadeleft,0.1;horizalign,right;y,SCREEN_CENTER_Y;x,SCREEN_CENTER_X+35;linear,0.3;x,-376" />
+
+<Layer Type="ActorFrame" OnCommand="y,SCREEN_CENTER_Y+(500-240);addy,-40;linear,0.15;addy,40"><children>
+	<Layer File="../_sfooter.png" OnCommand="x,SCREEN_CENTER_X;" />
+	<Layer File="../_sfooter.png" OnCommand="x,SCREEN_CENTER_X;cropright,0.6;zoomtowidth,SCREEN_WIDTH*2;" />
+	<Layer File="../_sfooter.png" OnCommand="x,SCREEN_CENTER_X;cropleft,0.6;zoomtowidth,SCREEN_WIDTH*2;" />
+</children></Layer>
+
+
+<Layer Type="ActorFrame" OnCommand="addy,90;linear,0.15;addy,-90"><children>
+	<Layer File="../../Graphics/_HeaderShared/Body.png" OnCommand="zoomtowidth,SCREEN_WIDTH*2;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+(-70.5-240);" />
+	<Layer File="../_yourchoice.png" OnCommand="horizalign,left;cropright,0.9;x,SCREEN_LEFT;y,SCREEN_CENTER_Y+(-45-240);" />
+	<Layer File="../_yourchoice.png" OnCommand="horizalign,right;cropleft,0.9;x,SCREEN_RIGHT+2;y,SCREEN_CENTER_Y+(-45-240);" />
+	<Layer File="../_yourchoice.png" OnCommand="cropleft,0.2;cropright,0.2;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+(-45-240);" />
+</children></Layer>
+
+	<Layer File="@'../ScreenStage overlay/stage '..GetStageText()" Condition="not GAMESTATE:IsCourseMode()" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+10;" />
+	<Layer File="nonstop.png" Condition="GAMESTATE:IsCourseMode() and GAMESTATE:GetPlayMode() == 1" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+10;" />
+	<Layer File="oni.png" Condition="GAMESTATE:IsCourseMode() and GAMESTATE:GetPlayMode() == 2" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+10;" />
+</children></ActorFrame>

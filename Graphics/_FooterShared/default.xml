@@ -1,0 +1,5 @@
+<ActorFrame><children>
+	<Layer File="base.png" OnCommand="zoomtowidth,SCREEN_WIDTH+5;x,SCREEN_CENTER_X;y,11.5" />
+	<Layer File="upper.png" OnCommand="horizalign,right;x,SCREEN_RIGHT+5" />
+
+</children></ActorFrame>

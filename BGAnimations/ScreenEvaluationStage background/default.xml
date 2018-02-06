@@ -1,0 +1,39 @@
+<ActorFrame><children>
+	<!-- This will act as the BGAnimation LengthSeconds command. -->
+	<Layer Type="Quad" OnCommand="%function(self) self:zoom(0) self:sleep(2) end" />
+
+	<Layer File="../_shared background" />
+	<Layer File="../_fade in" />
+</children></ActorFrame>
+[BGAnimation]
+LengthSeconds=0.5
+
+[Layer1]
+Import=../_shared background
+
+[Layer2]
+Import=../_fade in
+
+[Layer3]
+File=../fullcomboring.png
+Type=0
+Command=x,94;y,140;diffusealpha,0;sleep,1;diffusealpha,0.6;rotationy,14;rotationx,60;spin;effectmagnitude,0,0,-130;
+Condition=FullCombo(1) and IsPlayerEnabled(1) == true
+
+[Layer4]
+File=../fullcomboring.png
+Type=0
+Command=x,94;y,150;diffusealpha,0;sleep,1;diffusealpha,0.6;rotationy,-6;rotationx,70;spin;effectmagnitude,0,0,-130;
+Condition=FullCombo(1) and IsPlayerEnabled(1) == true
+
+[Layer5]
+File=../fullcomboring.png
+Type=0
+Command=x,544;y,140;diffusealpha,0;sleep,1;diffusealpha,0.6;rotationy,14;rotationx,60;spin;effectmagnitude,0,0,-130;
+Condition=FullCombo(2) and IsPlayerEnabled(2) == true
+
+[Layer6]
+File=../fullcomboring.png
+Type=0
+Command=x,544;y,150;diffusealpha,0;sleep,1;diffusealpha,0.6;rotationy,-6;rotationx,70;spin;effectmagnitude,0,0,-130;
+Condition=FullCombo(2) and IsPlayerEnabled(2) == true

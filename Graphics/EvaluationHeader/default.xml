@@ -1,0 +1,8 @@
+<ActorFrame><children>
+	<Layer File="../DiffHeader/body.png" OnCommand="zoomtowidth,SCREEN_WIDTH+5;x,SCREEN_CENTER_X;y,-25" />
+
+	<Layer File="left.png" OnCommand="horizalign,left;x,SCREEN_LEFT" />
+	<Layer File="Center.png" OnCommand="x,SCREEN_CENTER_X;y,-19.5" />
+	<Layer File="Timer.png" OnCommand="horizalign,right;x,SCREEN_RIGHT" />
+
+</children></ActorFrame>

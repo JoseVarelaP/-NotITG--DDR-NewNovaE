@@ -1,0 +1,5 @@
+<ActorFrame><children>
+	<Layer Type="Quad" OnCommand="%function(self) self:zoomto(SCREEN_WIDTH*2,SCREEN_HEIGHT*2) self:diffuse(0,0,0,1) self:linear(0.5) self:diffusealpha(0) end" />
+	<Layer File="../_doorright.png" OnCommand="faderight,0.1;horizalign,left;y,SCREEN_CENTER_Y;x,SCREEN_CENTER_X-35;linear,0.3;x,1004" />
+	<Layer File="../_doorleft.png" OnCommand="fadeleft,0.1;horizalign,right;y,SCREEN_CENTER_Y;x,SCREEN_CENTER_X+35;linear,0.3;x,-376" />
+</children></ActorFrame>

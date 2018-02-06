@@ -1,0 +1,6 @@
+<ActorFrame><children>
+	<Layer File="../ScreenGameplay Overlay/Frame.png" OnCommand="x,SCREEN_LEFT+110;y,SCREEN_CENTER_Y+(442-240)" />
+	<Layer File="../ScreenGameplay Overlay/Frame.png" OnCommand="zoomx,-1;x,SCREEN_RIGHT-110;y,SCREEN_CENTER_Y+(442-240)" />
+
+	<Layer Font="_shared2" Text="Jukebox Mode" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+200;zoom,1.0005;diffuse,0.5,0.5,0.5,1" />
+</children></ActorFrame>

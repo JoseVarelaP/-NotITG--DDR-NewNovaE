@@ -1,0 +1,33 @@
+<ActorFrame><children>
+	<!-- This will act as the BGAnimation LengthSeconds command. -->
+	<Layer Type="Quad" OnCommand="%function(self) self:zoom(0) self:sleep(1) end" />
+
+	<Layer File="../_bg.png" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomtowidth,SCREEN_WIDTH*2" />
+	<Layer File="../../Graphics/_shared footer" OnCommand="y,SCREEN_BOTTOM-20" />
+	<Layer Type="Quad" OnCommand="%function(self) self:zoomto(SCREEN_WIDTH*2,SCREEN_HEIGHT*2) self:diffuse(0,0,0,0) self:linear(1) self:diffusealpha(1) end" />
+	<Layer File="../_doorright.png" OnCommand="faderight,0.1;x,1004;horizalign,left;y,SCREEN_CENTER_Y;linear,0.2;x,SCREEN_CENTER_X-35" />
+	<Layer File="../_doorleft.png" OnCommand="fadeleft,0.1;x,-376;horizalign,right;y,SCREEN_CENTER_Y;linear,0.2;x,SCREEN_CENTER_X+35" />
+
+<Layer File="@'stage '..GetStageText()" Condition="not GAMESTATE:IsCourseMode()" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+10;zoomy,0;zoomx,2;sleep,0.1;bounceend,0.2;zoomy,1;zoomx,1;" />
+<Layer File="nonstop.png" Condition="GAMESTATE:IsCourseMode() and GAMESTATE:GetPlayMode() == 1" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+10;zoomy,0;zoomx,2;sleep,0.1;bounceend,0.2;zoomy,1;zoomx,1;" />
+<Layer File="oni.png" Condition="GAMESTATE:IsCourseMode() and GAMESTATE:GetPlayMode() == 2" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+10;zoomy,0;zoomx,2;sleep,0.1;bounceend,0.2;zoomy,1;zoomx,1;" />
+
+<Layer Type="ActorFrame" OnCommand="y,SCREEN_CENTER_Y+(500-240);sleep,0.5;linear,0.15;addy,-40;"><children>
+	<Layer File="../_sfooter.png" OnCommand="x,SCREEN_CENTER_X;" />
+	<Layer File="../_sfooter.png" OnCommand="x,SCREEN_CENTER_X;cropright,0.6;zoomtowidth,SCREEN_WIDTH*2;" />
+	<Layer File="../_sfooter.png" OnCommand="x,SCREEN_CENTER_X;cropleft,0.6;zoomtowidth,SCREEN_WIDTH*2;" />
+</children></Layer>
+
+
+<Layer Type="ActorFrame" OnCommand="sleep,0.5;linear,0.15;addy,90;"><children>
+	<Layer File="../../Graphics/_HeaderShared/Body.png" OnCommand="zoomtowidth,SCREEN_WIDTH*2;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+(-70.5-240);" />
+	<Layer File="../_yourchoice.png" OnCommand="horizalign,left;cropright,0.9;x,SCREEN_LEFT;y,SCREEN_CENTER_Y+(-45-240);" />
+	<Layer File="../_yourchoice.png" OnCommand="horizalign,right;cropleft,0.9;x,SCREEN_RIGHT+2;y,SCREEN_CENTER_Y+(-45-240);" />
+	<Layer File="../_yourchoice.png" OnCommand="cropleft,0.2;cropright,0.2;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+(-45-240);" />
+</children></Layer>
+
+
+<Layer File="../_bannerframe.png" Condition="not GAMESTATE:IsCourseMode()" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+(130-240);zoomy,0;sleep,0.5;linear,0.15;zoomy,1;sleep,1.2;linear,0.15;zoomy,0;" />
+
+<Layer File="SongBanner" Condition="not GAMESTATE:IsCourseMode()" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+(127-240);draworder,45;scaletoclipped,256,80;zoomy,0;sleep,0.5;linear,0.15;zoomy,1;sleep,1.2;linear,0.15;zoomy,0;" />
+</children></ActorFrame>

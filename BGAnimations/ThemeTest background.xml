@@ -1,0 +1,5 @@
+<ActorFrame><children>
+	<!-- Text -->
+	<Layer File="_shared background" />
+	<Layer Type="Quad" OnCommand="zoomto,SCREEN_WIDTH*2,SCREEN_HEIGHT*2;diffuse,0,0,0,0.5" />
+</children></ActorFrame>

@@ -1,0 +1,7 @@
+<ActorFrame><children>
+	<!-- This will act as the BGAnimation LengthSeconds command. -->
+	<Layer Type="Quad" OnCommand="%function(self) self:zoom(0) self:sleep(0.3) end" />
+
+	<Layer File="../_bg.png" OnCommand="zoomto,SCREEN_WIDTH+5,SCREEN_HEIGHT;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;diffusealpha,0;linear,0.3;diffusealpha,1" />
+	<Layer File="../../Graphics/_FooterShared" OnCommand="y,SCREEN_CENTER_Y+(460-240)" />
+</children></ActorFrame>

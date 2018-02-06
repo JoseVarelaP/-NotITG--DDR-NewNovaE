@@ -1,0 +1,8 @@
+<ActorFrame><children>
+	<!-- This will act as the BGAnimation LengthSeconds command. -->
+	<Layer Type="Quad" OnCommand="%function(self) self:zoom(0) self:sleep(8) end" />
+
+	<Layer Type="Quad" OnCommand="zoomto,SCREEN_WIDTH,SCREEN_HEIGHT;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y" />
+	<Layer File="logos.png" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;diffuse,0,0,0,1;addy,2;addx,10;linear,15;addx,-20" />
+	<Layer File="logos.png" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y" />
+</children></ActorFrame>

@@ -1,0 +1,8 @@
+<ActorFrame><children>
+	<!-- This will act as the BGAnimation LengthSeconds command. -->
+	<Layer Type="Quad" OnCommand="%function(self) self:zoom(0) self:sleep(4.059) end" />
+
+	<!-- OpenITG's Center isn't the ACTUAL center; it's the top left corner, so we need to center it again. -->
+	<Layer File="caution.png" OnCommand="zoomtowidth,SCREEN_WIDTH+100;zoomtoheight,SCREEN_HEIGHT-5;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;fadeleft,0.1;faderight,0.1;rotationy,30" />
+	<Layer File="caution.png" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;fadeleft,0.1;faderight,0.1" />
+</children></ActorFrame>

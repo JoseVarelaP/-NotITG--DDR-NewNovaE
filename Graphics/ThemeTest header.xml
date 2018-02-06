@@ -1,0 +1,6 @@
+<ActorFrame><children>
+	<Layer File="_HeaderShared/body.png" OnCommand="zoomtowidth,SCREEN_WIDTH+5;x,SCREEN_CENTER_X;y,-5.5" />
+	<Layer File="_HeaderShared/left.png" OnCommand="horizalign,left;x,SCREEN_LEFT" />
+	<Layer Font="DifficultyList" Text="history information" OnCommand="x,SCREEN_LEFT+10;horizalign,left;zoom,0.8;diffuse,1,0.9,0,1;shadowlength,3" />
+	<Layer Font="_shared2" Text="NewNovaE OITG-NITGPort Version 23" OnCommand="x,SCREEN_LEFT+10;y,15;horizalign,left;zoom,0.4;diffuse,1,0.9,0,1;shadowlength,1" />
+</children></ActorFrame>
