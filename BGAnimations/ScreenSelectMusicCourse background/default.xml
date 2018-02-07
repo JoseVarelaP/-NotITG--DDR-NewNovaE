@@ -1,7 +1,8 @@
 <ActorFrame><children>
-	<Layer File="../_bg.png" Condition="not GAMESTATE:IsCourseMode()" OnCommand="zoomtowidth,SCREEN_WIDTH+5;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y" />
-	<Layer File="../_bg_black.png" Condition="GAMESTATE:IsCourseMode() and GAMESTATE:GetPlayMode() == 1" OnCommand="zoomtowidth,SCREEN_WIDTH+5;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y" />
-	<Layer File="../_bg_red.png" Condition="GAMESTATE:IsCourseMode() and GAMESTATE:GetPlayMode() == 2" OnCommand="zoomtowidth,SCREEN_WIDTH+5;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y" />
+	<Layer File="../_bg_black.png" Condition="GAMESTATE:IsExtraStage() == false and GAMESTATE:IsExtraStage2() == false" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomto,SCREEN_WIDTH+5,SCREEN_HEIGHT;" />
+
+<!--	<Layer File="../_bg_red.png" Condition="GAMESTATE:IsExtraStage()" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomto,SCREEN_WIDTH+5,SCREEN_HEIGHT;" />
+	<Layer File="../_bg_black.png" Condition="GAMESTATE:IsExtraStage2()" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomto,SCREEN_WIDTH+5,SCREEN_HEIGHT;" /> -->
 
 	<Layer Type="ActorFrame" OnCommand="fov,170"><children>
 		<Layer File="../sphere_back.txt" OnCommand="x,SCREEN_CENTER_X+(300-320);y,SCREEN_CENTER_Y+(540-240);rotationx,-20;rotationz,90;zoom,12;spin;effectmagnitude,3,2,0" />
