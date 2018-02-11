@@ -46,6 +46,10 @@ function HoldTween(self)
 	self:diffusealpha(0)
 end
 
+function CourseModeMessage()
+	SCREENMAN:SystemMessage("Sorry, but Course Editing doesn't exist anymore in OpenITG/NotITG...")
+end
+
 -- Shorcuts
 function ThemeFile( file ) return THEME:GetPath( EC_GRAPHICS, '' , file ) end
 

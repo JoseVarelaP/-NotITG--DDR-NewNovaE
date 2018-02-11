@@ -1,4 +1,4 @@
-<ActorFrame><children>
+5<ActorFrame><children>
 	<!-- This will act as the BGAnimation LengthSeconds command. -->
 	<Layer Type="Quad" OnCommand="%function(self) self:zoom(0) self:sleep(1) end" />
 
@@ -29,5 +29,6 @@
 
 <Layer File="../_bannerframe.png" Condition="not GAMESTATE:IsCourseMode()" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+(130-240);zoomy,0;sleep,0.5;linear,0.15;zoomy,1;sleep,1.2;linear,0.15;zoomy,0;" />
 
+<!-- If available, then show the banner -->
 <Layer File="SongBanner" Condition="not GAMESTATE:IsCourseMode()" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+(127-240);draworder,45;scaletoclipped,256,80;zoomy,0;sleep,0.5;linear,0.15;zoomy,1;sleep,1.2;linear,0.15;zoomy,0;" />
 </children></ActorFrame>

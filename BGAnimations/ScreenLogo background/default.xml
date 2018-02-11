@@ -8,32 +8,4 @@
 	<Layer File="effect2.png" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;rotationz,0.5;zoom,0.96;glowshift;spin;effectmagnitude,0,0,55;" />
 	<Layer File="logo.png" OnCommand="x,SCREEN_CENTER_X+(311-320);y,SCREEN_CENTER_Y+(226-240)" />
 
-	<!-- <Layer File="../../Graphics/EvaluationHeader" OnCommand="y,-45;linear,2;;addy,90" /> -->
 </children></ActorFrame>
-[BGAnimation]
-LengthSeconds=8
-
-[Layer1]
-File=1.png
-Type=0
-Command=x,320;y,240;
-
-[Layer2]
-File=sphere.png
-Type=0
-Command=x,320;y,238;
-
-[Layer3]
-File=effect.png
-Type=0		
-Command=x,320;y,240;zoom,0.96;glowshift;spin;effectmagnitude,0,0,-65;
-
-[Layer4]
-File=effect2.png
-Type=0		
-Command=x,320;y,240;rotationz,0.5;zoom,0.96;glowshift;spin;effectmagnitude,0,0,55;
-
-[Layer5]
-File=logo.png
-Type=0
-Command=x,311;y,226;

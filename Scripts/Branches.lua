@@ -9,9 +9,9 @@ function ScreenCautionBranch()
 end
 
 function SongSelectionScreen()
-	if PlayModeName() == "Nonstop" then return "ScreenSelectMusicCourse" end
-	if PlayModeName() == "Oni" then return "ScreenSelectChallenge" end
-	if PlayModeName() == "Endless" then return "ScreenSelectCourseEndless" end
+	if GAMESTATE:GetPlayMode() == 1 then return "ScreenSelectMusicCourse" end
+	if GAMESTATE:GetPlayMode() == 2 then return "ScreenSelectChallenge" end
+	if GAMESTATE:GetPlayMode() == 3 then return "ScreenSelectCourseEndless" end
 	if IsNetConnected() then ReportStyle() end
 	if IsNetSMOnline() then return SMOnlineScreen() end
 	if IsNetConnected() then return "ScreenNetSelectMusic" end
