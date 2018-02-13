@@ -3,6 +3,26 @@
 
 	<Layer File="left.png" OnCommand="horizalign,left;x,SCREEN_LEFT" />
 	<Layer File="Center.png" OnCommand="x,SCREEN_CENTER_X;y,-19.5" />
-	<Layer File="Timer.png" OnCommand="horizalign,right;x,SCREEN_RIGHT" />
+	<Layer File="left.png" OnCommand="%function(self)
+	self:horizalign('right');
+	self:x(SCREEN_RIGHT-54);
+	self:zoomx(-1)
+	if PREFSMAN:GetPreference('MenuTimer') then
+		self:zoom(0)
+	else
+		self:zoom(1)
+		self:zoomx(-1)
+	end
+	end" />
+	<Layer File="Timer.png"
+		OnCommand="%function(self)
+	self:horizalign('right');
+	self:x(SCREEN_RIGHT);
+	if PREFSMAN:GetPreference('MenuTimer') then
+		self:hidden(0)
+	else
+		self:hidden(1)
+	end
+	end" />
 
 </children></ActorFrame>

@@ -3,5 +3,4 @@
 	<Layer Type="Quad" OnCommand="%function(self) self:zoom(0) self:sleep(1.8) end" />
 
 	<Layer File="../_bg.png" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;diffusealpha,0;sleep,1.5;linear,0.3;diffusealpha,1" />
-	<Layer File="../_footer.png" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+(460-240)" />
 </children></ActorFrame>

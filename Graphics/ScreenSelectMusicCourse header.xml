@@ -1,5 +1,17 @@
 <ActorFrame><children>
 	<Layer File="_HeaderShared/Position.xml" />
-	<Layer Font="DifficultyList" Text="Select Course" OnCommand="x,SCREEN_LEFT+10;horizalign,left;diffuse,1,0.9,0,1" />
+	<Layer Font="DifficultyList" Text="Select Course" OnCommand="%function(self)
+	self:x(SCREEN_LEFT+10);
+	self:horizalign('left');
+	self:diffuse(1,0.9,0,1)
+	if GAMESTATE:GetPlayMode() == 1 then
+		self:settext('Select Course')
+	elseif GAMESTATE:GetPlayMode() == 2 then
+		self:settext('Select Challenge')
+		self:zoom(0.9)
+	else
+		self:settext('HOW DID YOU GOT HERE')
+	end
+	end" />
 
 </children></ActorFrame>

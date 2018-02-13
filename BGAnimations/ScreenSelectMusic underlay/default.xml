@@ -1,0 +1,14 @@
+<ActorFrame><children>
+
+	<Layer Type="Quad" OnCommand="%function(self)
+	self:x(10)
+	self:y(SCREEN_CENTER_Y+90)
+	self:vertalign('top')
+	self:horizalign('left')
+	self:zoomto(280,100)
+	self:diffuse(0,0,0,0.6)
+	 end"
+	 OffCommand="linear,0.5;addx,-1000"
+	 />
+
+</children></ActorFrame>

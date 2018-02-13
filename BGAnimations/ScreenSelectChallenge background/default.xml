@@ -9,5 +9,14 @@
 		<Layer File="../ring1_back.txt" OnCommand="x,SCREEN_CENTER_X+(300-320);y,SCREEN_CENTER_Y+(540-240);rotationx,-20;rotationz,90;zoom,12;spin;effectmagnitude,30,22,45" />
 		<Layer File="../ring1_back.txt" OnCommand="x,SCREEN_CENTER_X+(300-320);y,SCREEN_CENTER_Y+(540-240);rotationx,-20;zoom,12;spin;effectmagnitude,-30,22,-45" />
 	</children></Layer>
+	
+	<!--
+	<Layer File="Warning.png" OnCommand="%function(self)
+	self:x(10)
+	self:y(SCREEN_CENTER_Y+90)
+	self:vertalign('top')
+	self:horizalign('left')
+	 end" />
+	-->
 
 </children></ActorFrame>

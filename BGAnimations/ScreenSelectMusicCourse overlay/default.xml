@@ -1,0 +1,13 @@
+<ActorFrame><children>
+	
+	<Layer File="Warning.png" Condition="GAMESTATE:GetPlayMode() == 2" OnCommand="%function(self)
+	self:x(SCREEN_CENTER_X-300)
+	self:y(SCREEN_CENTER_Y+170)
+	self:vertalign('top')
+	self:horizalign('left')
+	self:zoom(0.6)
+	self:diffuseblink()
+	 end"
+	 OffCommand="linear,0.5;addx,-1100" />
+
+</children></ActorFrame>

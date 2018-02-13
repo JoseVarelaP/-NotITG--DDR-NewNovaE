@@ -1,0 +1,9 @@
+<ActorFrame><children>
+	<!-- This will act as the BGAnimation LengthSeconds command. -->
+	<Layer Type="Quad" OnCommand="%function(self) self:zoom(0) self:sleep(1) SOUND:PlayOnce('failed.mp3') self:sleep(2) end" />
+	
+	<Layer Type="Quad" OnCommand="%function(self) self:zoomto(SCREEN_WIDTH*2,SCREEN_HEIGHT*2) self:diffuse(0,0,0,0) self:linear(1) self:diffusealpha(1) end" />
+	<Layer File="../_doorright.png" OnCommand="faderight,0.1;x,1004;horizalign,left;y,SCREEN_CENTER_Y;linear,0.2;x,SCREEN_CENTER_X-35" />
+	<Layer File="../_doorleft.png" OnCommand="fadeleft,0.1;x,-376;horizalign,right;y,SCREEN_CENTER_Y;linear,0.2;x,SCREEN_CENTER_X+35" />
+	<Layer File="failed.png" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomy,0;zoomx,2;linear,0.15;zoomx,1;zoomy,1;" />
+</children></ActorFrame>

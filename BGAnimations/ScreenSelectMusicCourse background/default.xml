@@ -1,5 +1,7 @@
 <ActorFrame><children>
-	<Layer File="../_bg_black.png" Condition="GAMESTATE:IsExtraStage() == false and GAMESTATE:IsExtraStage2() == false" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomto,SCREEN_WIDTH+5,SCREEN_HEIGHT;" />
+	<Layer File="../_bg_black.png" Condition="GAMESTATE:GetPlayMode() == 1" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomto,SCREEN_WIDTH+5,SCREEN_HEIGHT;" />
+
+	<Layer File="../_bg_red.png" Condition="GAMESTATE:GetPlayMode() == 2" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomto,SCREEN_WIDTH+5,SCREEN_HEIGHT;" />
 
 <!--	<Layer File="../_bg_red.png" Condition="GAMESTATE:IsExtraStage()" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomto,SCREEN_WIDTH+5,SCREEN_HEIGHT;" />
 	<Layer File="../_bg_black.png" Condition="GAMESTATE:IsExtraStage2()" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomto,SCREEN_WIDTH+5,SCREEN_HEIGHT;" /> -->
