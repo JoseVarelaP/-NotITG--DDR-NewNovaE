@@ -51,6 +51,7 @@ function CourseModeMessage()
 end
 
 -- Shorcuts
+function EnabledPlayer(pn) return GAMESTATE:IsPlayerEnabled(pn) end
 function ThemeFile( file ) return THEME:GetPath( EC_GRAPHICS, '' , file ) end
 
 -- This will play a file that is available on the SOUNDS folder.
