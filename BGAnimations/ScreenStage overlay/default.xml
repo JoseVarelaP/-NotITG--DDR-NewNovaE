@@ -31,4 +31,6 @@
 
 <!-- If available, then show the banner -->
 <Layer File="SongBanner" Condition="not GAMESTATE:IsCourseMode()" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y+(127-240);draworder,45;scaletoclipped,256,80;zoomy,0;sleep,0.5;linear,0.15;zoomy,1;sleep,1.2;linear,0.15;zoomy,0;" />
+
+
 </children></ActorFrame>

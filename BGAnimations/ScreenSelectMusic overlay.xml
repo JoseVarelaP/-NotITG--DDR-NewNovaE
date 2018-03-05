@@ -1,3 +1,50 @@
 <ActorFrame><children>
 	
+	<Layer Font="DifficultyList" Text=" " OnCommand="%function(self)
+	self:x(10.5)
+	self:y(6)
+	self:zoom(0.65)
+	self:shadowlength(1)
+	self:vertalign('top')
+	self:horizalign('left')
+	self:addy(-60)
+	self:linear(0.3)
+	self:addy(60);
+	 end"
+	 OffCommand="linear,0.5;addy,-60"
+	 CurrentSongChangedMessageCommand="sleep,0.01;queuecommand,Update"
+            CurrentStepsP1ChangedMessageCommand="sleep,0.01;queuecommand,Update"
+            CurrentStepsP2ChangedMessageCommand="sleep,0.01;queuecommand,Update"
+            UpdateCommand="%function(self)
+            self:hurrytweening(0.01)
+                if GAMESTATE:GetSortOrder() == 1 then
+                    self:settext( 'Group' )
+                elseif GAMESTATE:GetSortOrder() == 2 then
+                    self:settext( 'Alphabetical' )
+                elseif GAMESTATE:GetSortOrder() == 3 then
+                    self:settext( 'BPM' )
+                elseif GAMESTATE:GetSortOrder() == 4 then
+                    self:settext( 'Players Best' )
+                elseif GAMESTATE:GetSortOrder() == 5 then
+                    self:settext( 'Best Grades' )
+                elseif GAMESTATE:GetSortOrder() == 6 then
+                    self:settext( 'Artist' )
+                elseif GAMESTATE:GetSortOrder() == 7 then
+                    self:settext( 'Genre' )
+                elseif GAMESTATE:GetSortOrder() == 8 then
+                    self:settext( 'Song Length' )
+                elseif GAMESTATE:GetSortOrder() == 9 then
+                    self:settext( 'Difficulty: Easy' )
+                elseif GAMESTATE:GetSortOrder() == 10 then
+                    self:settext( 'Difficulty: Medium' )
+                elseif GAMESTATE:GetSortOrder() == 11 then
+                    self:settext( 'Difficulty: Hard' )
+                elseif GAMESTATE:GetSortOrder() == 12 then
+                    self:settext( 'Difficulty: Challenge' )
+                else
+                    self:settext( ' ' )
+                end
+            end"
+	 />
+
 </children></ActorFrame>

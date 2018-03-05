@@ -1,0 +1,5 @@
+<ActorFrame><children>
+	<Layer File="_HeaderShared/Position.xml" />
+	<Layer Font="DifficultyList" Text="Bookkeeping" OnCommand="x,SCREEN_LEFT+10;horizalign,left;diffuse,1,0.9,0,1" />
+
+</children></ActorFrame>

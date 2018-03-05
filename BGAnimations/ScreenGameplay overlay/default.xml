@@ -1,5 +1,5 @@
 <ActorFrame><children>
 	<!-- This is only going to include the Score frames, since i let Sm do the rest -->
-	<Layer File="Frame.png" OnCommand="x,SCREEN_LEFT+110;y,SCREEN_CENTER_Y+(442-240)" />
-	<Layer File="Frame.png" OnCommand="zoomx,-1;x,SCREEN_RIGHT-110;y,SCREEN_CENTER_Y+(442-240)" />
+	<Layer File="Frame.png" Condition="GAMESTATE:IsPlayerEnabled(PLAYER_1)" OnCommand="x,SCREEN_LEFT+110;y,SCREEN_CENTER_Y+(442-240)" />
+	<Layer File="Frame.png" Condition="GAMESTATE:IsPlayerEnabled(PLAYER_2)" OnCommand="zoomx,-1;x,SCREEN_RIGHT-110;y,SCREEN_CENTER_Y+(442-240)" />
 </children></ActorFrame>
